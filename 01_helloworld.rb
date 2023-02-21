@@ -11,3 +11,10 @@ puts "World"
 
 # p keyword is used for showing more raw version of an object.
 p "Hello World"
+
+# gets keyword is used to take inputs from user.
+name = gets
+puts "Hello #{name}, How are You?"
+
+name = gets.chomp
+puts "Hello #{name}, How are You?"

@@ -8,6 +8,7 @@ puts "Working" if true
 puts "Not working" if false
 
 
+
 # If-Else Statement
 age = 22
 if age >= 18
@@ -26,6 +27,19 @@ elsif x > 5
     puts "Value is greater than 5"
 else
     puts "Value is 5."
+end
+
+
+
+# Switch-case Statement
+x = 7
+case
+when x < 5
+    puts "Value is less than 5"
+when x > 5
+    puts "Value is greater than 5"
+else
+    puts "Value is 5"
 end
 
 

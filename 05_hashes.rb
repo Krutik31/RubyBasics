@@ -32,9 +32,10 @@ puts P
 L = Hash["k" => 10, "p" => 20]
 puts L.invert()
 
-# Getting the array of keys
+# Getting the array of keys and values
 R = Hash["k" => 10, "p" => 20]
 print "#{R.keys} \n"
+print "#{R.values} \n"
 
 # Getting the length of Hash
 M = Hash["k" => 10, "p" => 20]
@@ -43,3 +44,53 @@ puts M.length
 # Converting hashes into nested array
 G = {"k" => 10, "p" => 20}
 print "#{G.to_a} \n"
+
+
+info = {"name" => "Krutik", "surname" => "Patel"}
+
+# adding new items
+info["git"] = 82
+puts info
+
+# merge
+extrainfo = {"Organization" => "Simform"}
+puts info.merge(extrainfo)
+
+# Multi Values of a single Hash key
+interns = {
+    "names" => ["Krutik", "Dhyey", "Aditya"]
+}
+puts interns["names"][1]
+
+# delete_if
+info.delete_if {|key, value| key == "surname"}
+puts info
+
+# dig
+information = {"subjects" => {"ruby" => {"marks" => 90}, "git" => {"marks" => 82}}}
+puts information.dig("subjects", "ruby", "marks")
+
+# flatten
+puts information.flatten
+
+# has_key & has_value
+puts info.has_key?("name")
+puts info.has_value?("krutik")
+
+# slice
+info["surname"] = "Patel"
+puts info.slice("surname", "git")
+
+# transform_keys
+puts info.transform_keys {|k| "** #{k} **"}
+puts info.transform_values {|v| "** #{v} **"}
+
+# size
+puts info.size
+info.delete("git")
+puts info.size
+
+# value?, values & value_at
+puts info.value?("Patel")
+print "#{info.values}\n"
+puts "#{info.values_at("name", "surname")}\n"
