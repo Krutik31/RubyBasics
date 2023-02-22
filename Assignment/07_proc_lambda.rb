@@ -27,3 +27,4 @@ proc_lambda_demo
     # inside lambda
     # after lambda
     # inside proc
+	
