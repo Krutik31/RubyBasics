@@ -97,28 +97,28 @@ priceObj3.carprice("2500000")
 
 
 # ----------------------------------------------Multiple Inheritance----------------------------------------------
-module Name4
+module Nameable
   def carname(name)
     puts "Name: #{name}"
   end
 end
 
-module Color4
+module Colorable
   def carcolor(col)
     puts "Color: #{col}"
   end
 end
 
-module Price4
+module Pricable
   def carprice(price)
     puts "Price: #{price}"
   end
 end
 
 class Car4
-  include Name4
-  include Color4
-  extend Price4	# 'extend' keyword is used make every methods of this module, a class method. 
+  include Nameable
+  include Colorable
+  extend Pricable	# 'extend' keyword is used make every methods of this module, a class method. 
 end
 
 obj = Car4.new

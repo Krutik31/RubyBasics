@@ -3,41 +3,41 @@
 
 # 1) Using Inheritance:
 class Car
-  def carSize
+  def carsize
     puts "Multiple options for car size"
   end
 end
 
 class Micro < Car
-  def carSize
+  def carsize
     puts "Shorter than every car"
   end
 end
 
 class Sedan < Car
-  def carSize
+  def carsize
     puts "Longer than Hatchback & Micro car"
   end
 end
 
 class Limousine < Car
-  def carSize
+  def carsize
     puts "Longer than every car"
   end
 end
 
-# below, we are using different objects for calling the same method, 'carSize'
+# below, we are using different objects for calling the same method, 'carsize'
 carObj = Car.new
-carObj.carSize
+carObj.carsize
 
 microObj = Micro.new
-microObj.carSize
+microObj.carsize
 
 sedanObj = Sedan.new
-sedanObj.carSize
+sedanObj.carsize
 
 limousineObj = Limousine.new
-limousineObj.carSize
+limousineObj.carsize
 
 # OUTPUT:
 #   Multiple options for car size
@@ -49,25 +49,25 @@ limousineObj.carSize
 
 # 2) Using Duck typing:
 class Car2
-  def carSize2(type)
-    type.carSize2
+  def carsize2(type)
+    type.carsize2
   end
 end
 
 class Micro2
-  def carSize2
+  def carsize2
     puts "Shorter than every car"
   end
 end
 
 class Sedan2
-  def carSize2
+  def carsize2
     puts "Longer than Hatchback & Micro car"
   end
 end
 
 class Limousine2
-  def carSize2
+  def carsize2
     puts "Longer than every car"
   end
 end
@@ -79,11 +79,12 @@ sedanObj2 = Sedan2.new
 limousineObj2 = Limousine2.new
 
 # Calling same methods using duck typing.
-carObj2.carSize2(microObj2)
-carObj2.carSize2(sedanObj2)
-carObj2.carSize2(limousineObj2)
+carObj2.carsize2(microObj2)
+carObj2.carsize2(sedanObj2)
+carObj2.carsize2(limousineObj2)
 
 # OUTPUT:
   # Shorter than every car
   # Longer than Hatchback & Micro car
   # Longer than every car
+  

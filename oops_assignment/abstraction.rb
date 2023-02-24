@@ -44,7 +44,6 @@ obj2.rotate_car_keys
 # ----------------------------------------------Using Access Modifiers----------------------------------------------
 class Car3
 
-  public
   def rotate_car_keys
     car_engine_backend
   end

@@ -22,10 +22,10 @@ end
 carObj = Car.new("MG Hector")
 
 # getting the value
-puts carObj.carname                     
+carObj.carname                     
 
 # setting/manipulating the value
-puts carObj.carname="Lamborghini"
+carObj.carname="Lamborghini"
 
 # OUTPUT:
   # MG Hector
@@ -46,7 +46,7 @@ end
 carObj1 = Car1.new("MG Hector")
 
 # getting the value
-puts carObj1.carname1
+carObj1.carname1
 
 # OUTPUT:
   # MG Hector
@@ -94,11 +94,12 @@ end
 carObj3 = Car3.new("MG Hector")
 
 # getting the value
-puts carObj3.carname3
+carObj3.carname3
 
 # setting/manipulating the value
-puts carObj3.carname3="Lamborghini"
+carObj3.carname3="Lamborghini"
 
 # OUTPUT:
   # MG Hector
   # Lamborghini
+  
